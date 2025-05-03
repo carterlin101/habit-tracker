@@ -11,80 +11,75 @@
 
 
 
- <body>
-   <nav class="flex text-white bg-gray-900 w-screen h-15 justify-between items-center ">
-       <div class="text-white font-bold ml-2">Habit Tracker</div>
-       <div class="flex justify-around items-center md:gap-6 mr-10 ml-10">
-           <div class="">
-               <a href="#" class="text-white">Dashboard</a>
-           </div>
-           <div class="">
-               <a href="#" class="text-white">Add Habit</a>
-           </div>
-           <div class="">
-               <a href="#" class="text-white">Settings</a>
-           </div>
-       </div>
-   </nav>
+<body>
+    <nav class="flex text-white bg-gray-900 w-screen h-15 justify-between items-center ">
+        <div class="text-white font-bold ml-2">Habit Tracker</div>
+        <div class="flex justify-around items-center md:gap-6 mr-10 ml-10">
+            <div class="">
+                <a href="#" class="text-white">Dashboard</a>
+            </div>
+            <div class="">
+                <a href="#" class="text-white">Add Habit</a>
+            </div>
+            <div class="">
+                <a href="#" class="text-white">Settings</a>
+            </div>
+        </div>
+    </nav>
 
 
    <main class="w-screen h-screen bg-zinc-100 p-5">
 
-            <h1 class="font-bold text-2xl">Your Habits</h1>
+        <h1 class="font-bold text-2xl">Your Habits</h1>
+
+        <section class='grid gap-10 w-full mt-3 grid-cols-1 md:grid-cols-2'>
+
+            <div class=" rounded-xl bg-white p-3  ">
+                <h1 class="font-bold text-2xl py-1">Drink Water</h1>
+                <div class="h-1/7 w-full bg-gray-500 my-1 rounded-sm ">
+                    <div class="h-full w-1/2 bg-blue-500 rounded-sm"></div>
+                </div>
+                <p class="mb-2">Progress: 50%</p>
+            </div>
+
+
             
-            <!-- grid grid-cols-1 md:grid-cols-2 -->
-
-            <section class='grid gap-10 w-full mt-3 grid-cols-1 md:grid-cols-2'>
-
-                <div class=" rounded-xl bg-white p-3  ">
-                    <h1 class="font-bold text-2xl py-1">Drink Water</h1>
-                    <div class="h-1/7 w-full bg-gray-500 my-1 rounded-sm ">
-                        <div class="h-full w-1/2 bg-sky-500 rounded-sm"></div>
-                    </div>
-                    <p class="mb-2">Progress: 50%</p>
+            <div class=" rounded-xl bg-white p-3 ">
+                <h1 class="font-bold text-2xl py-1">Exercise</h1>
+                <div class="h-1/7 w-full bg-gray-500 rounded-sm my-1 ">
+                    <div class="h-full w-4/5 bg-emerald-500 rounded-sm"></div>
                 </div>
+                <p class="mb-2">Progress: 80%</p>
+            </div>
 
-
-                
-                <div class=" rounded-xl bg-white p-3 ">
-                    <h1 class="font-bold text-2xl py-1">Exercise</h1>
-                    <div class="h-1/7 w-full bg-gray-500 rounded-sm my-1 ">
-                        <div class="h-full w-4/5 bg-emerald-500 rounded-sm"></div>
-                    </div>
-                    <p class="mb-2">Progress: 80%</p>
-                </div>
-
-            </section>
+        </section>
     
 
 
 
 
-    <br style="line-height: 3;">
-    <h1 class="font-bold text-2xl">Add a New Habit</h1>
+        <br style="line-height: 3;">
+        <h1 class="font-bold text-2xl">Add a New Habit</h1>
 
 
-    <section class=" w-full mt-3 bg-white rounded-xl">
-        <form class="p-3">
-            <label class="text-md font-bold" for="HabitName">Habit Name</label><br>
-            <input class="border-1 border-black-50 border-solid p-1 rounded-sm w-full" placeholder="e.g., Read a book" id="HabitName"><br><br>
-            <label class="text-md font-bold" for="percent">Habit Name</label><br>
-            <input class="border-1 border-black-50 border-solid p-1 rounded-sm w-full" placeholder="e.g., 100" id="percent"><br>
-            <button class="bg-sky-500 p-1 my-1 rounded-sm text-white">Add Habit</button><br>
-        </form>
+        <section class=" w-full mt-3 bg-white rounded-xl">
+            <form class="p-3">
+                <label class="text-md font-bold " for="HabitName">Habit Name</label><br>
+                <input class="border-2 border-gray-100 mt-2 border-solid p-1 rounded-sm w-full" placeholder="e.g., Read a book" id="HabitName"><br><br>
+                <label class="text-md font-bold" for="percent">Target Percent (%)</label><br>
+                <input class="border-2 border-gray-100 mt-2 border-solid p-1 rounded-sm w-full" placeholder="e.g., 100" id="percent"><br>
+                <button class="bg-blue-500 p-1 mb-1 mt-4 rounded-sm text-white">Add Habit</button><br>
+            </form>
+        </section>
 
-   </section>
+        <br style="line-height: 3;">
+        <h1 class="font-bold text-2xl">Settings</h1>
 
+        <section class="flex items-center  w-full h-10 mt-3 bg-white rounded-md">
+            <input type="checkbox"  class="w-4 h-4 m-1" id="darkMode" name="darkMode" value="darkMode">
+            <label for="darkMode" class="text-md"> Enable Dark Mode</label><br>
+        </section>
+    </main>
+</body>
 
-
-
-   </main>
-
-
-
-
-
-
-
- </body>
 </html>
